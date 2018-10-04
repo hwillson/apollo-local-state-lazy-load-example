@@ -4,7 +4,6 @@ import { Route } from 'react-router-dom';
 import Header from '../components/Header';
 import { Home, Messages } from '../lazy'
 
-
 const App = () => (
   <div className="app">
     <Header />
