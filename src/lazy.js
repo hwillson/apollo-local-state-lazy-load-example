@@ -11,3 +11,8 @@ export const Messages = Loadable({
   loader: () => import('./components/messages/Messages'),
   loading: Loading,
 });
+
+export const Stats = Loadable({
+  loader: () => import('./components/stats/Stats'),
+  loading: Loading,
+});

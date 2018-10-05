@@ -10,6 +10,10 @@ const Header = () => (
     <NavLink to="/messages">
       Messages
     </NavLink>
+    {' '}
+    <NavLink to="/stats">
+      Stats
+    </NavLink>
   </div>
 );
 

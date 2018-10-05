@@ -1,13 +1,8 @@
 import gql from 'graphql-tag';
 
-export const defaults = {
-  messages: () => [],
-  readFilter: () => 'SHOW_ALL',
-};
-
 let nextMessageId = 0;
 
-export const resolvers = {
+export default {
   Mutation: {
     addMessage: (_, { text }, { cache }) => {
       const query = gql`

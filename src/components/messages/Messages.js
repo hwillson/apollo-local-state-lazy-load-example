@@ -5,10 +5,11 @@ import Footer from './Footer';
 import MessageForm from './MessageForm';
 import MessageList from './MessageList';
 
-import { resolvers, defaults } from '../../resolvers';
+import initializers from './initializers';
+import resolvers from './resolvers';
 
 function initLocalStateHandling(client) {
-  client.addLocalStateInitializers(defaults);
+  client.addLocalStateInitializers(initializers);
   client.addLocalStateResolvers(resolvers);
 }
 
