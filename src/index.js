@@ -13,12 +13,7 @@ const cache = new InMemoryCache();
 const client = new ApolloClient({
   cache,
   link: ApolloLink.empty(),
-  // Allows the one-time setup of application wide initializers and
-  // resolvers.
-  localState: {
-    initializers,
-    // resolvers: ...
-  },
+  initializers,
 });
 
 render(

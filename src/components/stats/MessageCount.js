@@ -16,7 +16,7 @@ const MessageCount = () => {
   return (
     <ApolloConsumer>
       {(client) => {
-        client.addLocalStateResolvers(resolvers);
+        client.addResolvers(resolvers);
         return (
           <Query query={GET_MESSAGE_COUNT} fetchPolicy="no-cache">
             {({ loading, data: { messageCount } }) => {
